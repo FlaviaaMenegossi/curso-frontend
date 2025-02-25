@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color:white
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    padding: 0 16px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+}
+
+header li {
+    display: inline;
+    margin-right: 8px; /* Reduz o espaçamento entre os itens do menu */
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Reduz o tamanho da fonte, se necessário */
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px; /* Para evitar que o conteúdo encoste nas bordas */
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%; /* Isso faz a imagem se ajustar à largura do contêiner pai */
+    height: 200px; /* Define a altura para todas as imagens */
+    object-fit: cover; /* Faz a imagem preencher a área sem distorcer, cortando se necessário */
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #ffffffff;
+    padding: 8px 16px; /* Ajuste o padding para melhorar a aparência */
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+    border-radius: 50px; /* Deixa o botão redondo */
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: #FBFBFB;
+}
+
+#sports .articles article a {
+    background-color: #133E87;
+}
+
+#economy {
+    background-color: #F2FCFC;
+}
+
+#economy .articles article a {
+    background-color: #6E8E59;
+}
+
+#technology {
+    background-color:#F6F4F0;
+}
+
+#technology .articles article a {
+    background-color: #493D9E;
+}
+
+#nature {
+    background-color: #FFFFFF;
+}
+
+#nature .articles article a {
+    background-color: rgba(2, 129, 55, 0.973);
+}
